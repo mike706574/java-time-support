@@ -5,6 +5,10 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class DateFactory {
+    public static Date today() {
+        return new Date();
+    }
+
     public static Date dateOf(int year, int month, int day) {
         return dateOf(TimeZone.getDefault(), year, month, day);
     }
